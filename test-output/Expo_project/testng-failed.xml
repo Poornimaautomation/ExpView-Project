@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Expo_project]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="utilities.reporting"/>
+  </listeners>
+  <test thread-count="5" name="Expo_project(failed)">
+    <parameter name="server" value="auth_server"/>
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="test_cases.Login_TC">
+        <methods>
+          <include name="server_setup"/>
+          <include name="Verify_auth_logout"/>
+          <include name="tearDown"/>
+          <include name="browser_setup"/>
+          <include name="screenShot"/>
+        </methods>
+      </class> <!-- test_cases.Login_TC -->
+    </classes>
+  </test> <!-- Expo_project(failed) -->
+</suite> <!-- Failed suite [Expo_project] -->
